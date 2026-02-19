@@ -6,11 +6,12 @@
   <style>
     body {
       font-family: system-ui;
-      padding: 20px;
+      /* padding: 20px; */
     }
 
     header {
-      display: flex;
+      position: relative;
+      display: block;
       justify-content: center;
       align-items: center;
       flex-direction: column;
@@ -18,16 +19,46 @@
 
     nav {
       display: flex;
-      border: 2px solid black;
       width: 100%;
-      justify-content: space-between;
-      padding: 10px;
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+      justify-content: space-around;
+      padding: 1.2em 0;
+      position: fixed;
+      background-color: rgb(51, 51, 51);
+      color: white;
+      top: 0;
     }
 
     a {
+      color: white;
+
       font-size: 32px;
-      padding: 5px;
+      /* padding: 5px; */
       text-decoration: none;
+    }
+
+    a:hover {
+      color: gray;
+    }
+
+    figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px;
+      row-gap: 20px;
+    }
+
+    section,
+    aside {
+      padding-left: 10%;
+    }
+
+    section p {
+      font-weight: 300;
+      font-size: 20px;
     }
   </style>
 </head>
@@ -50,10 +81,11 @@
 
     <article>
       <header>
-        <h3>Rooftop Gardens Are Changing Cities</h3>
+        <h1>Rooftop Gardens Are Changing Cities</h1>
         <address>Author: Maria Lopez </address>
         <p>Published: <time datetime="March 15, 2026">March 15, 2026</time> </p>
       </header>
+
       <section>
         <h3>Introduction</h3>
         <p>
@@ -73,9 +105,9 @@
           and improve air quality.
         </p>
         <mark>Urban farms can reduce city temperatures by 2°C.</mark>
+        <data>Average yield per rooftop: 500 kg per year.</data>
       </section>
 
-      <data>Average yield per rooftop: 500 kg per year.</data>
 
       <section>
         <h3> Real-World Example </h3>
@@ -94,14 +126,14 @@
         </details>
 
 
-        <section>
-          <h3>Conclusion</h3>
-          <p>
-            Rooftop farming is more than a trend;
-            it is a sustainable movement.
-          </p>
+      </section>
+      <section>
+        <h3>Conclusion</h3>
+        <p>
+          Rooftop farming is more than a trend;
+          it is a sustainable movement.
+        </p>
 
-        </section>
       </section>
 
       <aside>
