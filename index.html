@@ -3,99 +3,7 @@
 
 <head>
   <title>The Future of Urban Farming</title>
-  <style>
-    * {}
-
-    main {
-      display: flex;
-      justify-content: center;
-    }
-
-    article {
-      padding: 1em;
-      border: 1px solid gray;
-      margin: 40px;
-    }
-
-    aside {
-      width: 300px;
-      padding: 1em;
-      border: 1px solid gray;
-      margin: 40px;
-
-    }
-
-    body {
-      margin: 0;
-      width: 100%;
-      font-family: system-ui;
-    }
-
-    header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    nav {
-      display: flex;
-      width: 100%;
-      border-bottom: 1px solid black;
-      border-top: 1px solid black;
-      justify-content: space-around;
-      padding: 1.2em 0;
-      margin: 0;
-      position: sticky;
-      background-color: rgb(51, 51, 51);
-      color: white;
-      top: -1px;
-    }
-
-    a {
-      color: white;
-
-      font-size: 32px;
-      /* padding: 5px; */
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: gray;
-    }
-
-    figure {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 10px;
-      row-gap: 20px;
-    }
-
-    section,
-    aside {
-      padding-left: 10%;
-    }
-
-    section p {
-      font-weight: 300;
-      font-size: 20px;
-    }
-
-    footer {
-      border-top: 1px solid #a1a1a1;
-      padding: 1em;
-
-    }
-
-    footer section {
-      font-size: 32px;
-    }
-    footer a{
-      color: black;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -163,6 +71,29 @@
           it is a sustainable movement.
         </p>
       </section>
+      <footer>
+        <section>
+          <h3> Contact Information</h3>
+          <address>
+            Urban Green Initiative <br>
+            123 Greenway Blvd <br>
+            New York, NY
+            <br />
+
+
+            <p> Email: <a href="mailto:info@urbangreen.org">info@urbangreen.org</a></p>
+          </address>
+          <p>© <time datetime="2026">2026</time> Urban Green Initiative</p>
+          <p>Last updated:<time datetime=" April 1, 2026"> April 1, 2026</time></p>
+          <button command="show-modal" commandfor="my-dialog">Open dialog</button>
+        </section>
+
+        <dialog id="my-dialog">
+          <p>Subscribe to our newsletter for updates!</p>
+          <button commandfor="my-dialog" command="close">Close</button>
+        </dialog>
+      </footer>
+
     </article>
     <aside>
       <h4>Related Article:</h4>
@@ -170,29 +101,7 @@
     </aside>
   </main>
 
-  <footer>
-    <section>
-      <h3> Contact Information</h3>
-      <address>
-        Urban Green Initiative
-        123 Greenway Blvd
-        New York, NY
-        <br />
-        <a href="mailto:info@urbangreen.org">
-          Email: info@urbangreen.org
-        </a>
-      </address>
-      <p>© <time datetime="2026">2026</time> Urban Green Initiative</p>
-      <time datetime=" April 1, 2026"> Last updated: April 1, 2026</time>
-      <button>open Dialog</button>
-    </section>
 
-    <dialog>
-      <h4>Dialog</h4>
-      <button>Close</button>
-      <p> Subscribe to our newsletter for updates!</p>
-    </dialog>
-  </footer>
 </body>
 
 </html>
