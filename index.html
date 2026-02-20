@@ -4,14 +4,35 @@
 <head>
   <title>The Future of Urban Farming</title>
   <style>
+    * {}
+
+    main {
+      display: flex;
+      justify-content: center;
+    }
+
+    article {
+      padding: 1em;
+      border: 1px solid gray;
+      margin: 40px;
+    }
+
+    aside {
+      width: 300px;
+      padding: 1em;
+      border: 1px solid gray;
+      margin: 40px;
+
+    }
+
     body {
+      margin: 0;
+      width: 100%;
       font-family: system-ui;
-      /* padding: 20px; */
     }
 
     header {
-      position: relative;
-      display: block;
+      display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
@@ -24,10 +45,11 @@
       border-top: 1px solid black;
       justify-content: space-around;
       padding: 1.2em 0;
-      position: fixed;
+      margin: 0;
+      position: sticky;
       background-color: rgb(51, 51, 51);
       color: white;
-      top: 0;
+      top: -1px;
     }
 
     a {
@@ -60,27 +82,36 @@
       font-weight: 300;
       font-size: 20px;
     }
+
+    footer {
+      border-top: 1px solid #a1a1a1;
+      padding: 1em;
+
+    }
+
+    footer section {
+      font-size: 32px;
+    }
+    footer a{
+      color: black;
+    }
   </style>
 </head>
 
 <body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Articles</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
   <main>
-    <header>
-      <hgroup>
-        <h1>The Future of Urban Farming</h1>
-        <h2>Growing Food in the Concrete Jungle</h2>
-      </hgroup>
-
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Articles</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-
     <article>
       <header>
+        <hgroup>
+          <h1>The Future of Urban Farming</h1>
+          <h2>Growing Food in the Concrete Jungle</h2>
+        </hgroup>
         <h1>Rooftop Gardens Are Changing Cities</h1>
         <address>Author: Maria Lopez </address>
         <p>Published: <time datetime="March 15, 2026">March 15, 2026</time> </p>
@@ -124,8 +155,6 @@
           <summary>Project Funding</summary>
           The initial investment was $250,000.
         </details>
-
-
       </section>
       <section>
         <h3>Conclusion</h3>
@@ -133,17 +162,14 @@
           Rooftop farming is more than a trend;
           it is a sustainable movement.
         </p>
-
       </section>
-
-      <aside>
-        Related Article:
-        Community Gardens in Schools
-      </aside>
-
     </article>
-
+    <aside>
+      <h4>Related Article:</h4>
+      <p>Community Gardens in Schools</p>
+    </aside>
   </main>
+
   <footer>
     <section>
       <h3> Contact Information</h3>
@@ -152,15 +178,15 @@
         123 Greenway Blvd
         New York, NY
         <br />
-        Email: info@urbangreen.org
-        <br>
-        (mailto:info@urbangreen.org)
+        <a href="mailto:info@urbangreen.org">
+          Email: info@urbangreen.org
+        </a>
       </address>
       <p>© <time datetime="2026">2026</time> Urban Green Initiative</p>
       <time datetime=" April 1, 2026"> Last updated: April 1, 2026</time>
+      <button>open Dialog</button>
     </section>
 
-    <button>open Dialog</button>
     <dialog>
       <h4>Dialog</h4>
       <button>Close</button>
